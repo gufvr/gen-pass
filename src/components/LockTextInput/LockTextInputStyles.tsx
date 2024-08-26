@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
   inputLockContainer: {
-    backgroundColor: '#3591fa',
+    backgroundColor: '#525252',
     width: '100%',
     color: '#FFFFFF',
     fontSize: 20,

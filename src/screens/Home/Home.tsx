@@ -16,7 +16,6 @@ export function Home() {
       </View>
 
       <View style={styles.inputContainer}>
-        <LockTextInput />
         <GenButton />
       </View>
       <StatusBar style="light" />

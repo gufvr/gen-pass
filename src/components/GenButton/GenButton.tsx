@@ -1,18 +1,32 @@
-import React from 'react';
-import { Button, View } from 'react-native';
+import React, { useState } from 'react';
+import { Button, Text, Pressable, View } from 'react-native';
 
 import { styles } from './GenButtonStyles';
+import { LockTextInput } from '../LockTextInput/LockTextInput';
 
 export function GenButton() {
+  const [password, setPassword] = useState('');
+
+  function handleGenerateButton() {
+    setPassword('PASSOU');
+  }
+
   return (
-    <View style={styles.container}>
-      <Button
+    <>
+      <LockTextInput password={password} />
+
+      <Pressable style={styles.generateButton} onPress={handleGenerateButton}>
+        <Text style={styles.text}>Generate</Text>
+      </Pressable>
+
+      <Pressable
+        style={styles.copyButton}
         onPress={() => {
-          console.log('Hello');
+          console.log('Foi pressionado');
         }}
-        accessibilityLabel="click on me"
-        title="CLICK HERE"
-      />
-    </View>
+      >
+        <Text style={styles.text}>📄 Copy</Text>
+      </Pressable>
+    </>
   );
 }

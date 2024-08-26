@@ -3,12 +3,17 @@ import { TextInput } from 'react-native';
 
 import { styles } from './LockTextInputStyles';
 
-export function LockTextInput() {
+interface LockTextInputProps {
+  password: string;
+}
+
+export function LockTextInput(props: LockTextInputProps) {
   return (
     <TextInput
-      placeholder="Press"
+      placeholder="password"
+      value={props.password}
       placeholderTextColor={'#C0C0C0'}
       style={styles.inputLockContainer}
-    ></TextInput>
+    />
   );
 }
