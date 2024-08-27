@@ -26,12 +26,7 @@ export function GenButton() {
         <Text style={styles.text}>Generate</Text>
       </Pressable>
 
-      <Pressable
-        style={styles.copyButton}
-        onPress={() => {
-          console.log('Foi pressionado');
-        }}
-      >
+      <Pressable style={styles.copyButton}>
         <Text style={styles.text} onPress={handleCopyButton}>
           📄 Copy
         </Text>
