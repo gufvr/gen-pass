@@ -1,14 +1,21 @@
 import React, { useState } from 'react';
-import { Button, Text, Pressable, View } from 'react-native';
+import { Text, Pressable } from 'react-native';
+import * as Clipboard from 'expo-clipboard';
 
 import { styles } from './GenButtonStyles';
 import { LockTextInput } from '../LockTextInput/LockTextInput';
+import generatePassword from '../../services/passwordService';
 
 export function GenButton() {
   const [password, setPassword] = useState('');
 
   function handleGenerateButton() {
-    setPassword('PASSOU');
+    let generateToken = generatePassword();
+    setPassword(generateToken);
+  }
+
+  function handleCopyButton() {
+    Clipboard.setStringAsync(password);
   }
 
   return (
@@ -25,7 +32,9 @@ export function GenButton() {
           console.log('Foi pressionado');
         }}
       >
-        <Text style={styles.text}>📄 Copy</Text>
+        <Text style={styles.text} onPress={handleCopyButton}>
+          📄 Copy
+        </Text>
       </Pressable>
     </>
   );
