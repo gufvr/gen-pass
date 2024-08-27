@@ -3,6 +3,10 @@
 <p align="center">
   This application is designed for generating secure passwords easily
 </p>
+<div align="center">
+    <img src="./assets/genPass-wpp.png" alt="Description of the image" style="vertical-align: middle;" height="600">
+</div>
+
 
 ## Features
 - Passwords random generation: Generate a random 8 characters easily. (news upcoming)
