@@ -9,7 +9,7 @@
 
 
 ## Features
-- Passwords random generation: Generate a random 8 characters easily. (news upcoming)
+- Passwords random generation: Generate a random 12 characters easily. (news upcoming)
 - Clipboard Support: Quickly copy generated passwords to the clipboard.
 
 ## Project Structure
@@ -35,6 +35,9 @@ Start the application:
 ``` bash
 npm start
 ```
+
+## Download APK
+You can download the APK file to run the application on your mobile device [here](https://drive.google.com/file/d/1xRB5PD9G7-AxHMBkOxH1bKn7wMk8NOon/view?usp=drive_link).
 
 ## License
 This project is open-source and available under the **MIT License**.
