@@ -3,6 +3,7 @@ import { View, Text, Image } from 'react-native';
 
 import { styles } from './LockLogoStyles';
 import lockLogo from '../../../assets/lock-logo.png';
+import Icon from '../../../assets/icon.png';
 
 export function LockLogo() {
   return (
